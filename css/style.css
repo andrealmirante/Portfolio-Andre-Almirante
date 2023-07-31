@@ -193,4 +193,8 @@ hr {
   .item  {
     margin: 0px 15px 0px 15px
   }
+
+  .item p {
+    text-align:center;
+  }
 }
