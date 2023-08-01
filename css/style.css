@@ -41,35 +41,25 @@ canvas {
   position: absolute;
   z-index: -999;
   width: 100%;
-  height: 1100px;
+  height: 100%;
 }
-body {
-  margin-top: 1%;
+body {  
   height: 100%;
   background: #000000;
   color: #485666;
   font-family: "Montserrat", sans-serif;
   font-weight: 200;
   user-select: none;
+  overflow: hidden;
 }
 
 header {
-
 	display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   height: 100%;
   min-height: 200px;
-}
-
-header:before {
-	top: 0px;
-	left: 0px;
-	width: 100%;
-	height: 100%;
-	content: "";
-	position: absolute;
 }
 
 header .container {
@@ -96,6 +86,7 @@ header .container {
   border: 10px solid #48566600;
   overflow: hidden;
   z-index: 750;
+  margin-top: 5%;
 }
 
 .text-profile {
@@ -103,32 +94,21 @@ header .container {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 5px;
+  padding-top: 15px;
   font-size: 20px;
   z-index: 700;
-}
-
-#mid {
-  padding-top: 01.5%;
-  
 }
 
 .container {
   display: flex;
   justify-content: space-between;
-  padding-top: 1%;
-  
+  margin-top: 5%;
 }
 
 .item {
   display: inline-block;
   color: white;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-basis: 90%;
   margin: 0px 100px 0px 100px;
-
 }
 .item ul {
   list-style: none;
@@ -136,7 +116,7 @@ header .container {
 }
 
 hr {
-  width: 60%;
+  width: 16%;
 }
 
 .menu {
@@ -144,16 +124,21 @@ hr {
   justify-content: center;
   text-align: center;
   flex-basis: 100%;
-
 }
 
 .item ul a {
   text-decoration: none;
-  color: white;
+  color: rgb(155, 155, 155);
 }
 
+.item ul a:hover {
+  text-decoration: none;
+  color: rgb(126, 125, 125);
+}
+
+
 .item p {
-  text-align:center;
+  text-align:left;
 }
 
 .mid hr {
@@ -170,31 +155,93 @@ hr {
 }
 
 .item li {
-  padding-top: 5%;
+  padding-top: 10%;
+}
+
+@media screen and (min-width: 1367px) and (max-width: 1600px) and (max-height: 900px) {
+
+    .img-profile {
+      margin-top: 0;
+    }
+
+    .container {
+      margin-top: 0;
+    }
+
+  .text-profile {
+    padding-top: 5px;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1366px) {
+  body {
+    overflow: hidden;
+  }
+
+  .img-profile {
+    margin-top: 0;
+  }
+
+  .container {
+    margin-top: 0;
+  }
+
+  h2 {
+    font-size: 14px !important;
+  }
+
+  .text-profile {
+    font-size: 14px;
+    padding-top: 5px;
+  }
+
+  .infos {
+    font-size: 12px;
+  }
+
+  .menu {
+    margin-bottom: 10px;
+  }
+
+  .item ul a {
+    font-size: 12px;
+  }
+
+  .item p {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 900px) {
+  body {
+    overflow: scroll;
+  }
 
   canvas {
     position: absolute;
     z-index: -999;
     width: 100%;
-    height: 1350px;
+    height: 1200px;
+  }
+
+  .text-profile {
+    font-size: 18px;
   }
 
   .container {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .menu {
-      margin-bottom: 20px;
+    margin-bottom: 20px;
   }
 
-  .item  {
-    margin: 0px 15px 0px 15px
+  .item {
+    margin: 0px 15px 0px 15px;
   }
 
   .item p {
-    text-align:center;
+    text-align: center;
   }
 }
+
