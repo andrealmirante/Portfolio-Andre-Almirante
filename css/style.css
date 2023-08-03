@@ -158,6 +158,8 @@ hr {
   padding-top: 10%;
 }
 
+/* Responsivo */
+
 @media screen and (min-width: 1367px) and (max-width: 1600px) and (max-height: 900px) {
 
     .img-profile {
@@ -172,6 +174,8 @@ hr {
     padding-top: 5px;
   }
 }
+
+/* Responsivo */
 
 @media screen and (min-width: 901px) and (max-width: 1366px) {
   body {
@@ -211,6 +215,8 @@ hr {
     font-size: 12px;
   }
 }
+ 
+/* Mobile */
 
 @media screen and (max-width: 900px) {
   body {
