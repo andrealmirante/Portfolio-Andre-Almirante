@@ -1,7 +1,8 @@
-#Bem-vindo ao meu portfólio.
+#Edição 2026
+Depois de quase 4 anos, estou atualizando e modernizando o meu portfólio para destacar meus novos projetos e experiências.
 
-Fiz todo o CSS e HTML utilizando conhecimentos acadêmicos.
-Realizei algumas mudanças nos efeitos do Background-Script para torná-lo mais agradável.
+#Bem-vindo ao meu portfólio.
+Todo o HTML e CSS foi desenvolvido com base em sólidos conhecimentos acadêmicos e práticos. Também realizei alguns ajustes nos efeitos do Background-Script para tornar a navegação mais agradável e fluida.
 
 Créditos:
 
